@@ -101,3 +101,39 @@ footer {
   max-width: 1063px;
   margin: auto;
 }
+
+/* -------------------------------- Navbar /*
+ * -------------------------------- */
+nav {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 75px auto;
+}
+
+.nav--links a {
+  text-decoration: none;
+  color: var(--clr-neutralMedium);
+  font-weight: 500;
+  font-size: 1.05rem;
+  margin: 0 14px 0 14px;
+}
+
+.nav--links a:hover {
+  color: var(--clr-primary);
+  cursor: pointer;
+}
+
+.nav--btn-blue {
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+  font-weight: 500;
+  font-size: 1.05rem;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.nav--btn-blue:hover {
+  background-color: var(--clr-neutralDark);
+}
