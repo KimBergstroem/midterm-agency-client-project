@@ -265,18 +265,17 @@ All testing was carried out in [Testing.md](TESTING.md).
 
 ### **Solved Bugs**
 
-| Type      | Bug     | Solution |
-| --------- | ------- | -------- |
-| Script.js | Example | Example  |
-| Script.js | Example | Example  |
+| Type          | Bug                                                                                                                                                        | Solution                                                                                                 |
+| ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| navigation.js | [Dropdown menu remains visible on larger screens after resizing from mobile view](https://github.com/KimBergstroem/midterm-agency-client-project/issues/2) | Add js window.addEventListener function to hide dropdown menu when screen size exceeds mobile breakpoint |
 
 &nbsp;
 
 ### **Known Bugs**
 
-| Type       | Bug                                                                             | Solution             |
-| ---------- | ------------------------------------------------------------------------------- | -------------------- |
-| Top Navbar | Dropdown menu remains visible on larger screens after resizing from mobile view | This issue persists. |
+| Type      | Bug     | Solution |
+| --------- | ------- | -------- |
+| Script.js | Example | Example  |
 
 &nbsp;
 

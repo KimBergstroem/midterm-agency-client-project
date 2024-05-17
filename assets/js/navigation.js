@@ -9,3 +9,10 @@ hamburgerCheckbox.addEventListener("change", function () {
     dropdownMenu.style.display = "none";
   }
 });
+
+// Make sure that the dropdown menu is hidden when the screen is resized above 766px
+window.addEventListener("resize", function () {
+  if (window.innerWidth > 766) {
+    document.querySelector(".topnav__dropdown-menu").style.display = "none";
+  }
+});
