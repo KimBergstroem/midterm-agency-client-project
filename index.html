@@ -15,29 +15,52 @@
 
     <!--Javscript-->
     <script src="assets/js/index.js" defer></script>
-    <script src="assets/js/navbarToggle.js" defer></script>
+    <script src="assets/js/navigation.js" defer></script>
 
     <!-- Page Title -->
     <title>Home Page - Circle Agency</title>
   </head>
+
   <body>
-    <!-- Main Navigation -->
-    <nav id="nav--navbar">
-      <!-- Logo -->
-      <div class="nav--logo">
-        <a href="index.html">
-          <img src="assets/img/logos/circle.svg" alt="Circle Agency Logo" />
-        </a>
+    <!-- Top Navigation -->
+    <header>
+      <nav id="topnav__wrapper" role="navigation">
+        <!-- Logo -->
+        <div class="topnav__logo">
+          <a href="index.html">
+            <img src="assets/img/logos/circle.svg" alt="Circle Agency Logo" />
+          </a>
+        </div>
+        <!-- Hamburger Menu Icon -->
+        <div class="topnav__hamburger-menu">
+          <input id="topnav__hamburger-checkbox" type="checkbox" />
+          <label
+            class="topnav__hamburger-icon"
+            for="topnav__hamburger-checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <div class="topnav__links">
+          <a class="topnav__link" href="index.html">Home</a>
+          <a class="topnav__link" href="project.html">Projects</a>
+          <a class="topnav__link" href="index.html#services">Services</a>
+        </div>
+        <div class="topnav__btn-blue">
+          <a href="contact.html" class="topnav__btn-blue">Contact Us</a>
+        </div>
+      </nav>
+      <!-- Dropdown Menu -->
+      <div class="topnav__dropdown-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
       </div>
-      <div class="nav--links">
-        <a href="index.html">Home</a>
-        <a href="project.html">Projects</a>
-        <a href="index.html#services">Services</a>
-      </div>
-      <div class="nav--btn-blue">
-        <a href="contact.html" class="nav--btn-blue">Contact Us</a>
-      </div>
-    </nav>
+    </header>
 
     <!-- Main Content -->
     <main>
@@ -63,17 +86,17 @@
     <!-- Footer -->
     <footer>
       <!-- Logo -->
-      <div class="footer--logo">
-        <div class="footer--img-logo">
+      <div class="footer__logo">
+        <div class="footer__img-logo">
           <img src="assets/img/logos/circle.svg" alt="Circle Agency Logo" />
         </div>
-        <address class="footer--address">
+        <address class="footer__address">
           <p>2972 Westheimer Rd. Santa Ana,<br />Illinois 85486</p>
         </address>
       </div>
       <!-- Footer Navigation -->
-      <nav id="footer--nav">
-        <ul class="footer--nav-links">
+      <nav id="footer__nav">
+        <ul class="footer__nav-links">
           <li><a href="#">Team</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">About Us</a></li>
