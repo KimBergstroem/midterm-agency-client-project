@@ -8,6 +8,8 @@ Developer: [Kim Bergström](https://github.com/KimBergstroem) <br>
 
 The Circle Agency Project is an exciting endeavor aimed at developing a comprehensive website for Circle Agency, a dynamic and forward-thinking company. This web platform will serve as a digital hub, showcasing Circle Agency's services, projects, and values to potential clients and stakeholders. With a focus on modern design, user experience, and functionality, the website will aim to captivate visitors and convey the essence of Circle Agency's brand identity.
 
+![Language uses](https://img.shields.io/github/languages/count/kimbergstroem/PP2)
+
 ## <span id="readme-top">**Table of Content**</span>
 
 - 📄[**User Experience**](#user-experience-ux)
@@ -272,10 +274,9 @@ All testing was carried out in [Testing.md](TESTING.md).
 
 ### **Known Bugs**
 
-| Type      | Bug     | Solution |
-| --------- | ------- | -------- |
-| Script.js | Example | Example  |
-| Script.js | Example | Example  |
+| Type       | Bug                                                                             | Solution             |
+| ---------- | ------------------------------------------------------------------------------- | -------------------- |
+| Top Navbar | Dropdown menu remains visible on larger screens after resizing from mobile view | This issue persists. |
 
 &nbsp;
 
