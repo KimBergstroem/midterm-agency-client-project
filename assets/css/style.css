@@ -244,7 +244,14 @@ footer {
   color: var(--clr-neutralMedium);
   font-weight: 500;
   font-size: 1.05rem;
-  margin: 0 14px 0 14px;
+  padding: 13px;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+}
+
+.main__link:hover {
+  border: 2px solid var(--clr-primary);
+  color: var(--clr-primary);
 }
 
 #main__img-block {
