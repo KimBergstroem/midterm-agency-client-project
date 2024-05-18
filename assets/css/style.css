@@ -354,6 +354,89 @@ footer {
   margin: 0 27px 27px 27px;
 }
 
+/* Reviews Section */
+#reviews__wrapper {
+  background: var(--clr-neutralDark) url("../img/testimonial-section/orbit.png")
+    no-repeat;
+  background-size: cover;
+  height: 500px;
+  margin-top: 100px;
+  max-width: 1200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+#reviews__wrapper h2 {
+  color: var(--clr-white);
+  font-size: 2.1rem;
+}
+
+#reviews__wrapper p {
+  width: 55%;
+  color: var(--clr-secondaryDark);
+  font-size: 1.7rem;
+}
+
+.reviews__autor-testimonial-block {
+  width: 17%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.reviews__autor-testimonial-block img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+.reviews__autor-testimonial-block h4 {
+  color: var(--clr-primaryLight);
+  font-weight: 400;
+}
+
+.reviews__autor-testimonial-block h5 {
+  color: var(--clr-white);
+  font-weight: 400;
+}
+
+.reviews__autor-testimonial-block div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 5px;
+}
+
+.reviews__emoji-1,
+.reviews__emoji-2,
+.reviews__emoji-3,
+.reviews__emoji-4 {
+  width: 125px;
+  height: 125px;
+  position: absolute;
+}
+
+.reviews__emoji-1 {
+  inset: 10% auto auto 10%;
+}
+
+.reviews__emoji-2 {
+  inset: 10% 10% auto auto;
+}
+
+.reviews__emoji-3 {
+  inset: auto 10% 10% 10%;
+}
+
+.reviews__emoji-4 {
+  inset: auto 10% 10% auto;
+}
+
 /* ------------------------------ Footer ------------------------------ */
 footer {
   display: flex;
@@ -417,6 +500,25 @@ footer {
   .project__title {
     margin-left: 44px;
   }
+
+  /* Reviews Section */
+  .reviews__emoji-1,
+  .reviews__emoji-2,
+  .reviews__emoji-3,
+  .reviews__emoji-4 {
+    width: 96px;
+    height: 96px;
+  }
+
+  .reviews__autor-testimonial-block {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+  }
+
+  #reviews__wrapper h2 {
+    font-size: 1.6rem;
+  }
 }
 
 /* ------------------------- Smaller than 766px (mobile) --------------------- */
@@ -457,6 +559,29 @@ footer {
   .project__title {
     margin-bottom: 40px;
     margin-top: 50px;
+  }
+
+  /* Reviews Section */
+  .reviews__emoji-1,
+  .reviews__emoji-2,
+  .reviews__emoji-3,
+  .reviews__emoji-4 {
+    display: none;
+  }
+
+  #reviews__wrapper {
+    justify-content: center;
+    height: 370px;
+  }
+
+  #reviews__wrapper p {
+    width: 95%;
+    font-size: 1.2rem;
+    margin: 40px 0 40px 0;
+  }
+
+  #reviews__wrapper h2 {
+    font-size: 1.4rem;
   }
 
   /* -------------------------- Navbar ------------------------- */
