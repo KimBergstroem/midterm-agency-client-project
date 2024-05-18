@@ -437,6 +437,115 @@ footer {
   inset: auto 10% 10% auto;
 }
 
+/* Services Section */
+.services__title {
+  margin: 100px 0 75px 0;
+}
+
+.services__title h2 {
+  font-size: 2.5rem;
+}
+
+.services__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 25px;
+  grid-row-gap: 0px;
+}
+
+.services__card {
+  background-color: var(--clr-white);
+  padding-bottom: 20px;
+}
+
+#service-icon-1,
+#service-icon-2,
+#service-icon-3 {
+  background-size: 46%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 80px;
+  background-color: var(--clr-primaryLighter);
+  border-radius: 100px;
+  margin: 34px 0 0 34px;
+}
+
+#service-icon-1 {
+  background-image: url("../img/services-section-icons/1.svg");
+}
+
+#service-icon-2 {
+  background-image: url("../img/services-section-icons/2.svg");
+}
+
+#service-icon-3 {
+  background-image: url("../img/services-section-icons/3.svg");
+}
+
+.services__card h3 {
+  font-size: 1.3rem;
+  margin: 27px;
+}
+
+.services__card p {
+  font-size: 1.1rem;
+  margin: 0 27px 27px 27px;
+}
+
+.services__card a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--clr-primary);
+  margin: 0 27px 27px 27px;
+}
+
+/* Questions Section */
+#questions__wrapper {
+  height: 500px;
+  background-color: var(--clr-secondaryDark);
+  margin-top: 100px;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#questions__wrapper h2 {
+  font-size: 2.5rem;
+}
+
+#questions__wrapper p {
+  color: var(--clr-neutralMedium);
+  font-weight: 400;
+  margin: 20px 0 50px 0;
+}
+
+#questions__btn {
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+  font-weight: 500;
+  font-size: 1.05rem;
+  padding: 25px 50px 25px 50px;
+  text-decoration: none;
+  margin-left: 12px;
+}
+
+#questions__email-input {
+  border: 0;
+  height: 70px;
+  font-weight: 400;
+  font-size: 1.1rem;
+  width: 500px;
+  background: url("../img/newsletter-icon/mail.svg") no-repeat scroll 7px 7px;
+  background-position: 3% 50%;
+  background-color: var(--clr-white);
+  padding-left: 50px;
+}
+
 /* ------------------------------ Footer ------------------------------ */
 footer {
   display: flex;
@@ -519,6 +628,20 @@ footer {
   #reviews__wrapper h2 {
     font-size: 1.6rem;
   }
+
+  /* Services Section */
+  .services__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 44px;
+    grid-row-gap: 44px;
+    margin: 0 44px 0 44px;
+  }
+
+  .services__title {
+    margin-left: 44px;
+  }
 }
 
 /* ------------------------- Smaller than 766px (mobile) --------------------- */
@@ -582,6 +705,45 @@ footer {
 
   #reviews__wrapper h2 {
     font-size: 1.4rem;
+  }
+
+  /* Services Section */
+  .services__container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 44px;
+    grid-row-gap: 44px;
+    margin: 0 44px 0 44px;
+  }
+
+  .services__title {
+    margin-bottom: 40px;
+  }
+
+  /* Questions Section */
+  #questions__wrapper h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .questions__subscribe {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #questions__email-input {
+    width: 100%;
+    background: url("../img/newsletter-icon/mail.svg") no-repeat scroll 7px 7px;
+    background-position: 20% 50%;
+    text-align: center;
+    background-color: var(--clr-white);
+  }
+
+  #questions__btn {
+    width: 100%;
+    margin: 12px 0 0 0;
+    text-align: center;
   }
 
   /* -------------------------- Navbar ------------------------- */
@@ -674,6 +836,11 @@ footer {
 
   /* Project Section */
   .project__title h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Services Section */
+  .services__title h2 {
     font-size: 1.5rem;
   }
 }
