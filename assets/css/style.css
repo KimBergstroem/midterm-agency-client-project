@@ -621,6 +621,7 @@ footer {
 }
 
 #contact__wrapper h1 {
+  font-size: 3rem;
   padding-bottom: 70px;
 }
 
@@ -926,5 +927,10 @@ textarea {
   }
   .contact__email-phone > div {
     width: 100%;
+  }
+  #contact__wrapper h1 {
+    font-size: 2rem;
+    padding-bottom: 70px;
+    text-align: center;
   }
 }
