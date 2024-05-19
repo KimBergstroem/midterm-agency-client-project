@@ -668,6 +668,7 @@ textarea {
   padding: 25px;
   text-decoration: none;
   border: 0;
+  cursor: pointer;
 }
 
 .contact__btn-submit:hover {
