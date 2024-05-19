@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <!--Javscript-->
-    <script src="assets/js/index.js" defer></script>
+    <script src="assets/js/contact.js" defer></script>
     <script src="assets/js/navigation.js" defer></script>
 
     <!-- Page Title -->
@@ -77,22 +77,37 @@
         <div class="contact__title">
           <h1>Contact Us</h1>
           <div id="contact__form" class="contact__form-container">
-            <form id="contact__form-message">
+            <form id="contact__form-message" method="POST">
               <!-- Name  -->
-              <label for="name">Full Name</label>
-              <input type="text" name="name" id="name" required />
+              <label for="name">Full Name *</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Full Name"
+                required />
 
               <div class="contact__email-phone">
                 <!-- Email -->
                 <div>
-                  <label for="email">Email Address</label>
-                  <input type="email" name="email" id="email" required />
+                  <label for="email">Email Address *</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email Address"
+                    required />
                 </div>
 
                 <!-- Phone  -->
                 <div>
-                  <label for="phone">Phone Number</label>
-                  <input type="tel" name="phone" id="phone" required />
+                  <label for="phone">Phone Number *</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    placeholder="Phone Number"
+                    required />
                 </div>
               </div>
 
