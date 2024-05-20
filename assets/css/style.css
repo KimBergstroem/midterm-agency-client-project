@@ -604,6 +604,24 @@ footer {
   cursor: pointer;
 }
 
+#scrollButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  background: var(--clr-neutralDark);
+  color: var(--clr-white);
+  z-index: 999;
+}
+
+#scrollButton .fa-chevron-up {
+  font-size: 2rem;
+}
+
 /* ------------------------------ Contact.html ------------------------------ */
 .contact__form-container form {
   display: flex;
@@ -980,6 +998,16 @@ textarea {
   /* Services Section */
   .services__title h2 {
     font-size: 1.5rem;
+  }
+
+  /* -------------------------- Footer ------------------------- */
+  #scrollButton {
+    width: 35px;
+    height: 35px;
+  }
+
+  #scrollButton .fa-chevron-up {
+    font-size: 20px;
   }
 
   /* -------------------------- Contact.html ------------------------- */
