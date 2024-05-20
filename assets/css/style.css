@@ -675,6 +675,22 @@ textarea {
   background-color: var(--clr-neutralDark);
 }
 
+#contact__alert-box {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  background-color: var(--bg-right);
+  color: var(--clr-white);
+  padding: 15px;
+  margin-top: 15px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 /* ------------------------------ Project.html ------------------------------ */
 #project-detail__wrapper {
   width: 80vw;
