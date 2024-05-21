@@ -199,13 +199,20 @@ I have been mindful during coding to ensure that the website is as accessible fr
 
 ### **Languages Used**
 
-Hyper Text Markup Language (<b>HTML</b>), Cascading Style Sheets (<b>CSS</b>) and Javascript (<b>JS</b>) were used to create this webbapplication.
-
-&nbsp;
+- Hyper Text Markup Language (<b>HTML</b>)
+- Cascading Style Sheets (<b>CSS</b>)
+- Javascript (<b>JS</b>)
 
 ### **Frameworks, Libraries & Programs Used**
 
-API
+- **Git**: A distributed version control system used for tracking changes in the project's source code.
+- **GitHub**: A web-based hosting service for version control repositories, used for storing and managing the project's source code.
+- **Visual Studio**: Local development environment (IDE) used for developing and testing.
+- **Netlify**: A cloud platform that enables deployment and hosting of web applications. Netlify was used for deploying the Circle Agency project to a live server.
+- **Figma**: An online collaborative design tool that offers a wide range of design and prototyping capabilities. Figma was used for designing the Circle Agency project UI.
+- **Google Fonts**: A collection of free and open-source fonts used for typography on Circle Agency's website.
+- **Font Awesome**: A library of icons used for adding scalable vector icons to Circle Agency's website.
+- **IronHacks Free API**: Provided access to project data such as images, titles, descriptions, and content dates, enhancing [feature/functionality] on the Circle Agency website.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <p align="center">
@@ -290,17 +297,28 @@ All testing was carried out in [Testing.md](TESTING.md).
 
 I'm grateful to [Iron Hack](https://www.ironhack.com/es-en) for equipping me with the education and resources necessary to improve my HTML/CSS and JavaScript skills. Their lessons have been essential in my understanding of the basic principles of web development.
 
-&nbsp;
-
 ### **Content**
 
-Paragraphs / text for the webpage/readme was written together with [ChatGPT](https://chat.openai.com/)
+- The content for the web application was curated by IronHack Bootcamp as part of an assignment.
+- Text / Paragraphs provided by the bootcamp as well as content sourced from a free API.
+- The README was collaboratively written with [ChatGPT](https://chat.openai.com/).
+- English spellchecker as Google Chrome extension [Grammarly](https://www.grammarly.com/)
 
-&nbsp;
+### **Learning Resources**
 
-### **Media**
+#### W3 Schools:
 
-&nbsp;
+- [Tips on darkmode function](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_dark_mode)
+
+#### MDN Web Docs:
+
+- [Functions, arrow functions, structures, fetchAPI](https://developer.mozilla.org/en-US/docs/Web/API/Document)
+
+#### Various tutorials and YouTube channels:
+
+I would like to extend my appreciation to the authors of the tutorials and YouTube channels that have shared their knowledge and expertise, enabling me to learn and apply best practices in building my project.
+
+- [Kevin Powell - CSS - Best practices](https://www.youtube.com/@KevinPowell)
 
 ### **Acknowledgments**
 
