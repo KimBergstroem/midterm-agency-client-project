@@ -55,6 +55,22 @@
   --caption-small-weight: normal;
 }
 
+.dark-mode {
+  --clr-primary: #d3d3d3;
+  --clr-primaryLight: #60a5fa;
+  --clr-primaryLighter: #bfdbfe;
+  --clr-secondaryLight: #f59e0b;
+  --clr-secondaryDark: #d97706;
+  --clr-neutralLight: #1f2937;
+  --clr-neutralMedium: #9ca3af;
+  --clr-neutralDark: #f3f4f6;
+  --clr-white: #1f2937;
+  --clr-black: #f3f4f6;
+  --bg-wrong: #dc2626;
+  --bg-right: #16a34a;
+  --bg-main: #1f2937;
+}
+
 /* Resets */
 * {
   margin: 0;
@@ -122,6 +138,38 @@ footer {
 .topnav__links a:hover {
   color: var(--clr-primary);
   cursor: pointer;
+}
+
+.topnav__logo {
+  display: flex;
+}
+
+#darkModeToggle {
+  margin-left: 20px;
+}
+
+#darkModeToggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#darkModeToggle i {
+  display: none;
+  font-size: 25px;
+}
+
+#darkModeToggle .moon {
+  display: inline;
+}
+
+body.dark-mode #darkModeToggle .moon {
+  display: none;
+}
+
+body.dark-mode #darkModeToggle .sun {
+  display: inline;
+  color: var(--clr-black);
 }
 
 .topnav__btn-blue {
@@ -954,6 +1002,10 @@ textarea {
 
 /* -------------------- Smaller than 475px (small mobiles) ------------------- */
 @media (max-width: 475px) {
+  /* -------------------------- Navbar ------------------------- */
+  #darkModeToggle i {
+    font-size: 20px;
+  }
   /* -------------------------- Index.html ------------------------- */
   /* Main Section */
   .main__txt-block h1 {
