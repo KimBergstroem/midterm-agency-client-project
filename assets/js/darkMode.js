@@ -1,3 +1,8 @@
+// Dark mode function with document load
+
+//--------------------
+//--------------------
+//--------------------
 document.addEventListener("DOMContentLoaded", function () {
   const toggleButton = document.getElementById("darkModeToggle");
   // Get the current theme from localStorage

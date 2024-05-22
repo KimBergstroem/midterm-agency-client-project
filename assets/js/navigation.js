@@ -1,4 +1,10 @@
 // JavaScript for toggle functionality for responsive Top Navigation Bar.
+
+//--------------------
+//--------------------
+//--------------------
+
+// Declared variables
 const hamburgerCheckbox = document.getElementById("topnav__hamburger-checkbox");
 const dropdownMenu = document.querySelector(".topnav__dropdown-menu");
 
