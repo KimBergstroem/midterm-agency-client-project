@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <meta name="author" content="Circle Agency" />
+    <meta name="description" content="Fictional web design company" />
+    <meta name="keywords" content="web design, company, business, fictional" />
+
+    <!-- Favicon + FontAwesome Icons -->
+    <link rel="icon" type="image/x-icon" href="assets/img/logos/favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/66c113ad0a.js"
+      crossorigin="anonymous"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--Javscript-->
+    <script src="./assets/js/projectDataHandler.js" defer></script>
+    <script src="./assets/js/navigation.js" defer></script>
+    <script src="./assets/js/scrollToTop.js" defer></script>
+    <script src="./assets/js/darkMode.js" defer></script>
+
+    <!-- Page Title -->
+    <title>404 Error Page</title>
+  </head>
+
+  <body>
+    <!-- Top Navigation -->
+    <header>
+      <nav id="topnav__wrapper" role="navigation">
+        <!-- Logo -->
+        <div class="topnav__logo">
+          <a href="./index.html">
+            <img src="./assets/img/logos/circle.svg" alt="Circle Agency Logo" />
+          </a>
+          <!-- Toggle Button -->
+          <button id="darkModeToggle">
+            <i class="fas fa-moon fa-lg moon"></i>
+            <i class="fas fa-sun fa-lg sun"></i>
+          </button>
+        </div>
+        <!-- Hamburger Menu Icon -->
+        <div class="topnav__hamburger-menu">
+          <input id="topnav__hamburger-checkbox" type="checkbox" />
+          <label
+            class="topnav__hamburger-icon"
+            for="topnav__hamburger-checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <div class="topnav__links">
+          <a class="topnav__link" href="./index.html">Home</a>
+          <a class="topnav__link" href="./index.html#project__wrapper"
+            >Projects</a
+          >
+          <a class="topnav__link" href="./index.html#services__wrapper"
+            >Services</a
+          >
+        </div>
+        <div class="topnav__btn-blue">
+          <a href="./contact.html#contact__wrapper" class="topnav__btn-blue"
+            >Contact Us</a
+          >
+        </div>
+      </nav>
+      <!-- Dropdown Menu -->
+      <div class="topnav__dropdown-menu">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./index.html#project__wrapper">Projects</a></li>
+          <li><a href="./index.html#services__wrapper">Services</a></li>
+          <li><a href="./contact.html#contact__wrapper">Contact Us</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!--Project Section-->
+      <section id="error__container">
+        <h1>404 - Page Not Found</h1>
+        <p>Uh-oh! Looks like you took a wrong turn!</p>
+        <p>
+          The page you are looking for might have been abducted by aliens, gone
+          on a vacation, or simply decided to hide from you.
+        </p>
+        <div class="error__btn-block">
+          <a class="error__btn-blue" href="./index.html">Start fresh</a>
+        </div>
+      </section>
+
+      <!-- Questions Section-->
+      <section id="questions__wrapper">
+        <h2>Do you have any questions?</h2>
+        <p>Let us help you!</p>
+        <div class="questions__subscribe">
+          <!-- Icon attached as background in input field -->
+          <input
+            id="questions__email-input"
+            type="text"
+            placeholder="Enter your email" />
+          <a id="questions__btn" href="#">Subscribe</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <!-- Logo -->
+      <div class="footer__logo">
+        <div class="footer__img-logo">
+          <img src="./assets/img/logos/circle.svg" alt="Circle Agency Logo" />
+        </div>
+        <address class="footer__address">
+          <p>2972 Westheimer Rd. Santa Ana,<br />Illinois 85486</p>
+        </address>
+      </div>
+      <!-- Footer Navigation -->
+      <nav id="footer__nav">
+        <ul class="footer__nav-links">
+          <li><a href="#">Team</a></li>
+          <li><a href="./index.html#services__wrapper">Services</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="./index.html#project__wrapper">Projects</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </nav>
+
+      <!-- Scroll to Top button -->
+      <div id="scrollButton">
+        <i class="fa-solid fa-chevron-up"></i>
+      </div>
+    </footer>
+  </body>
+</html>
