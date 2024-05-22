@@ -104,6 +104,10 @@ ol {
   font-weight: var(--h4-weight);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
