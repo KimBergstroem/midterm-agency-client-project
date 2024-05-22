@@ -295,7 +295,7 @@ All testing was carried out in [Testing.md](TESTING.md).
 
 ### **Code Used**
 
-I'm grateful to [Iron Hack](https://www.ironhack.com/es-en) for equipping me with the education and resources necessary to improve my HTML/CSS and JavaScript skills. Their lessons have been essential in my understanding of the basic principles of web development.
+I'm grateful to [Iron Hack](https://www.ironhack.com/) for equipping me with the education and resources necessary to improve my HTML/CSS and JavaScript skills. Their lessons have been essential in my understanding of the basic principles of web development.
 
 ### **Content**
 
@@ -313,12 +313,14 @@ I'm grateful to [Iron Hack](https://www.ironhack.com/es-en) for equipping me wit
 #### MDN Web Docs:
 
 - [Functions, arrow functions, structures, fetchAPI](https://developer.mozilla.org/en-US/docs/Web/API/Document)
+- [DomContentLoaded](https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event)
 
 #### Various tutorials and YouTube channels:
 
 I would like to extend my appreciation to the authors of the tutorials and YouTube channels that have shared their knowledge and expertise, enabling me to learn and apply best practices in building my project.
 
 - [Kevin Powell - CSS - Best practices](https://www.youtube.com/@KevinPowell)
+- [ Iron Hack - Loading Animation](https://www.ironhack.com/
 
 ### **Acknowledgments**
 
