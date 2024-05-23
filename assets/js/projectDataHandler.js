@@ -9,7 +9,10 @@
 const GET_ENDPOINT =
   "https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects";
 
-// Fetch data from API
+/**
+ * Fetches project data from the specified API endpoint.
+ * @returns {Array} - An array containing project data.
+ */
 const fetchProjectData = async () => {
   try {
     const response = await fetch(GET_ENDPOINT);
@@ -23,7 +26,9 @@ const fetchProjectData = async () => {
   }
 };
 
-// Fetching and rendering of project data
+/**
+ * Fetches and renders project data.
+ */
 const projectPosts = async () => {
   try {
     const projectData = await fetchProjectData();
@@ -33,7 +38,6 @@ const projectPosts = async () => {
     const urlParams = new URLSearchParams(window.location.search);
     const uuid = urlParams.get("uuid");
 
-    // Call the function to fetch and display project details
     if (uuid) {
       fetchProjectDataByUUID(uuid, projectData);
     }
@@ -42,12 +46,14 @@ const projectPosts = async () => {
   }
 };
 
+/**
+ * Renders project cards on the page.
+ * @param {Array} projectData - An array containing project data.
+ */
 const renderProjectCards = (projectData) => {
   // Shuffle the projectData array
   const shuffledProjects = projectData.sort(() => Math.random() - 0.5);
-
   const randomProjects = shuffledProjects.slice(0, 3);
-
   const projectContainer = document.querySelector(".project__container");
   projectContainer.innerHTML = "";
 
@@ -58,7 +64,11 @@ const renderProjectCards = (projectData) => {
   }
 };
 
-// Create HTML template for a project card
+/**
+ * Creates HTML template for a project card.
+ * @param {Object} project - The project object containing project details.
+ * @returns {string} - HTML string for the project card.
+ */
 const createProjectCardHTML = (project) => {
   return `
     <div class="project__card">
@@ -70,7 +80,11 @@ const createProjectCardHTML = (project) => {
   `;
 };
 
-// Fetch project data based on UUID params
+/**
+ * Fetches project data based on UUID parameter.
+ * @param {string} uuid - The UUID of the project to fetch.
+ * @param {Array} allProjects - An array containing all project data.
+ */
 const fetchProjectDataByUUID = async (uuid, allProjects) => {
   try {
     const project = allProjects.find((proj) => proj.uuid === uuid);
@@ -83,7 +97,10 @@ const fetchProjectDataByUUID = async (uuid, allProjects) => {
   }
 };
 
-// Create HTML for project.html page
+/**
+ * Creates HTML for project detail page.
+ * @param {Object} project - The project object containing project details.
+ */
 const createProjectDetailPageHTML = (project) => {
   const projectDetailWrapper = document.getElementById(
     "project-detail__wrapper"
@@ -105,4 +122,5 @@ const createProjectDetailPageHTML = (project) => {
     `;
 };
 
+// Event listener to trigger fetching and rendering of project data when the page loads
 window.addEventListener("load", projectPosts);

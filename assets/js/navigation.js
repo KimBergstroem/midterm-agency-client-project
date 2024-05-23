@@ -4,9 +4,9 @@
 //--------------------
 //--------------------
 
-// Declared variables
-const hamburgerCheckbox = document.getElementById("topnav__hamburger-checkbox");
-const dropdownMenu = document.querySelector(".topnav__dropdown-menu");
+// Constants
+const hamburgerCheckbox = document.getElementById("topnav__hamburger-checkbox"),
+  dropdownMenu = document.querySelector(".topnav__dropdown-menu");
 
 hamburgerCheckbox.addEventListener("change", function () {
   if (this.checked) {

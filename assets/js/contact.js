@@ -6,25 +6,36 @@
 //--------------------
 //--------------------
 
-const POST_ENDPOINT = "https://jsonplaceholder.typicode.com/posts";
+// Constants
+const FORM = document.querySelector("#contact__form-message"),
+  SUCCESS_ALERT = document.querySelector("#contact__alert-box"),
+  POST_ENDPOINT = "https://jsonplaceholder.typicode.com/posts";
 
+/**
+ * Displays an alert message with customizable styling and duration.
+ * @param {string} message - The message to be displayed in the alert.
+ * @param {boolean} [isSuccess=true] - Indicates whether the alert should indicate success (true) or failure (false). Defaults to true.
+ */
 const showAlert = (message, isSuccess = true) => {
-  const successAlert = document.querySelector("#contact__alert-box");
-  successAlert.style.display = "block";
-  successAlert.style.backgroundColor = isSuccess ? "green" : "red";
-  successAlert.textContent = message;
+  SUCCESS_ALERT.style.display = "block";
+  SUCCESS_ALERT.style.backgroundColor = isSuccess ? "green" : "red";
+  SUCCESS_ALERT.textContent = message;
   setTimeout(() => {
-    successAlert.style.display = "none";
+    SUCCESS_ALERT.style.display = "none";
   }, 3000);
 };
 
+/**
+ * Sends form data to a specified endpoint.
+ * @param {Event} event - The form submission event.
+ * @param {FormData} formData - The form data to be sent.
+ */
 const sendForm = async (event) => {
-  // This syntax prevents the form from refreshing the page on submission
+  // Prevents the form from refreshing the page on submission
   event.preventDefault();
 
   // Creating a new FormData object
-  const formElement = document.querySelector("#contact__form-message");
-  const formData = new FormData(formElement);
+  const formData = new FormData(FORM);
 
   // Construct the data object from the FormData
   const data = {
@@ -47,26 +58,128 @@ const sendForm = async (event) => {
 
     // Extra layer of error handling
     if (!response.ok) {
-      // Display error message
       showAlert("Something went wrong. Please try again!", false);
       throw new Error(`HTTP error! Status: ${response.status}`);
     } else if (response.ok) {
-      // Display success message
       showAlert("Your message has been sent successfully!");
     }
 
     const userResponseData = await response.json();
     console.log(userResponseData);
   } catch (e) {
-    // Display error message
     console.error("Error", e.message);
     showAlert("Something went wrong. Please try again!", false);
   }
 
-  formElement.reset();
+  FORM.reset();
 };
 
-// Dom slection to connect my function "sendForm" with submit event
-document
-  .querySelector("#contact__form-message")
-  .addEventListener("submit", sendForm);
+//--------------------
+//--Form Validation---
+//--------------------
+const FORM_FIELDS = [
+  {
+    field: "name",
+    validations: [
+      {
+        validate: (value) => value.trim().length >= 3,
+        errorMessage:
+          "Full Name is required and must be at least 3 characters long.",
+      },
+      {
+        validate: (value) => !/\d/.test(value),
+        errorMessage: "Full Name cannot contain numbers.",
+      },
+      {
+        validate: (value) => value.trim().toLowerCase() !== "ironhack",
+        errorMessage: "You can't be Ironhack, because I am Ironhack 🧐",
+      },
+    ],
+  },
+  {
+    field: "email",
+    validations: [
+      {
+        validate: (value) => {
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          return emailRegex.test(value);
+        },
+        errorMessage: "Please enter a valid email address.",
+      },
+    ],
+  },
+  {
+    field: "phone",
+    validations: [
+      {
+        validate: (value) => /^\d{10}$/.test(value),
+        errorMessage: "Please enter a valid phone number.",
+      },
+    ],
+  },
+  {
+    field: "message",
+    validations: [
+      {
+        validate: (value) => value.trim().length > 0,
+        errorMessage: "Message is required and cannot be empty.",
+      },
+      {
+        validate: (value) => !/[!@#$%^&*(),.?":{}|<>]/g.test(value),
+        errorMessage: "Message cannot contain special characters.",
+      },
+    ],
+  },
+];
+
+/**
+ * Validates a single form field based on a set of validation rules.
+ * @param {string} field - The id of the input field to validate.
+ * @param {Array} validations - An array of validation objects.
+ * @returns {boolean} - True if all validations pass, false otherwise.
+ */
+function validateField(field, validations) {
+  const inputValue = document.querySelector(`#${field}`);
+  let errorDisplay = inputValue.nextElementSibling;
+
+  if (!errorDisplay || !errorDisplay.classList.contains("error-message")) {
+    errorDisplay = document.createElement("span");
+    errorDisplay.classList.add("error-message");
+    inputValue.parentNode.insertBefore(errorDisplay, inputValue.nextSibling);
+  }
+
+  for (const { validate, errorMessage } of validations) {
+    if (!validate(inputValue.value)) {
+      inputValue.classList.add("invalid");
+      errorDisplay.textContent = errorMessage;
+      errorDisplay.style.display = "block";
+      return false;
+    }
+  }
+
+  inputValue.classList.remove("invalid");
+  errorDisplay.textContent = "";
+  errorDisplay.style.display = "none";
+  return true;
+}
+
+/**
+ * Validates the entire form by iterating through each form field.
+ * @param {Event} event - The form submission event.
+ */
+function validateForm(event) {
+  let isFormValid = true;
+  for (const { field, validations } of FORM_FIELDS) {
+    const isValid = validateField(field, validations);
+    if (!isValid) isFormValid = false;
+  }
+
+  if (!isFormValid) {
+    event.preventDefault(); // Prevent if fails
+  } else {
+    sendForm(event); // Proceed if passes
+  }
+}
+
+// Checks if the form is valid or containing any inputValue errors
+FORM.addEventListener("submit", validateForm);

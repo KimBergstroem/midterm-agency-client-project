@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
   toggleButton.addEventListener("click", function () {
     document.body.classList.toggle("dark-mode");
 
-    //Defualt theme for user
+    // Defualt theme for user
     let theme = "light";
     if (document.body.classList.contains("dark-mode")) {
       theme = "dark";

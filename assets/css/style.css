@@ -173,6 +173,18 @@ footer {
   background-color: var(--clr-neutralDark);
 }
 
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  display: none;
+  padding: 0 0 20px 0;
+}
+
+input.invalid,
+textarea.invalid {
+  border-color: red;
+}
+
 /* ------------------------------ Splash Animation ------------------------------ */
 /* Taken and inspired from IronHack School Project - https://circle-agency-spring-class-demo.netlify.app/ */
 .splash {
