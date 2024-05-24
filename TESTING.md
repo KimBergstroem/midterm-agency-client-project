@@ -10,15 +10,15 @@ Developer: [Kim Bergström](https://github.com/KimBergstroem) <br>
 
 ## Table of Content
 
-- 📄 [**Automated Testing**](#--automated-testing--)
-    + [**W3C Validator - HTML**](#--w3c-validator---html--)
-    + [**W3C Validator - CSS**](#--w3c-validator---css--)
-    + [**JavaScript Validator**](#--javascript-validator--)
-    + [**Lighthouse**](#--lighthouse--)
-    + [**Wave**](#--wave--)
-- 📄 [**Manual Testing**](#--manual-testing--)
-    + [**Testing User Stories**](#--testing-user-stories--)
-    + [**Full Testing**](#--full-testing--)
+- 📄 [**Automated Testing**](#automated-testing)
+    + [W3C Validator - HTML](#w3c-validator---html)
+    + [W3C Validator - CSS](#w3c-validator---css)
+    + [JavaScript Validator](#javascript-validator)
+    + [Lighthouse](#lighthouse)
+    + [Wave](#wave)
+- 📄 [**Manual Testing**](#manual-testing)
+    + [Testing User Stories](#testing-user-stories)
+    + [Full Testing](#full-testing)
 
 &nbsp;
 
