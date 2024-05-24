@@ -1,30 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <meta name="author" content="Circle Agency" />
-    <meta name="description" content="Fictional web design company" />
-    <meta name="keywords" content="web design, company, business, fictional" />
+    <meta name="author" content="Circle Agency">
+    <meta name="description" content="Fictional web design company">
+    <meta name="keywords" content="web design, company, business, fictional">
 
     <!-- Favicon + FontAwesome Icons -->
-    <link rel="icon" type="image/x-icon" href="assets/img/logos/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="assets/img/logos/favicon.ico">
     <script
       src="https://kit.fontawesome.com/66c113ad0a.js"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous" defer></script>
 
     <!--CSS-->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
 
     <!--Javscript-->
     <script src="./assets/js/projectDataHandler.js" defer></script>
-    <script src="./assets/js/navigation.js" defer></script>
-    <script src="./assets/js/loader-animation.js" defer></script>
-    <script src="./assets/js/scrollToTop.js" defer></script>
-    <script src="./assets/js/darkMode.js" defer></script>
+    <script src="./assets/js/siteInteractions.js" defer></script>
 
     <!-- Page Title -->
     <title>Home Page - Circle Agency</title>
@@ -45,21 +42,21 @@
 
     <!-- Top Navigation -->
     <header>
-      <nav id="topnav__wrapper" role="navigation">
+      <nav id="topnav__wrapper">
         <!-- Logo -->
         <div class="topnav__logo">
           <a href="index.html">
-            <img src="./assets/img/logos/circle.svg" alt="Circle Agency Logo" />
+            <img src="./assets/img/logos/circle.svg" alt="Circle Agency Logo">
           </a>
           <!-- Toggle Button -->
-          <button id="darkModeToggle">
+          <button id="darkModeToggle" aria-label="Toggle Dark Mode">
             <i class="fas fa-moon fa-lg moon"></i>
             <i class="fas fa-sun fa-lg sun"></i>
           </button>
         </div>
         <!-- Hamburger Menu Icon -->
         <div class="topnav__hamburger-menu">
-          <input id="topnav__hamburger-checkbox" type="checkbox" />
+          <input id="topnav__hamburger-checkbox" type="checkbox">
           <label
             class="topnav__hamburger-icon"
             for="topnav__hamburger-checkbox">
@@ -101,7 +98,7 @@
         <div class="main__txt-block">
           <h1>Empower Your Business With Stunning Design!</h1>
           <p>
-            Circle is a digital design and development studio. <br />
+            Circle is a digital design and development studio. <br>
             We design and develop astonishing websites and mobile apps.
           </p>
           <div class="main__btn-block">
@@ -117,20 +114,21 @@
           <img
             id="main__img-hero"
             src="assets/img/hero-section/hero-image.png"
-            alt="Hero Image" />
+            alt="Hero Image">
           <img
             id="main__img-card1"
             src="assets/img/hero-section/card-1.png"
-            alt="Credit Card Image" />
+            alt="Credit Card Image">
           <img
             id="main__img-card2"
             src="assets/img/hero-section/card-2.png"
-            alt="Project Accepted Image" />
+            alt="Project Accepted Image">
         </div>
       </section>
 
       <!-- Brands Section-->
       <section id="brands__wrapper">
+        <h2 class="visually-hidden">Our Trusted Brands</h2>
         <div class="brands__marquee-container">
           <a href="https://www.airbnb.com" target="_blank" class="brands__first"
             ><img
@@ -138,35 +136,35 @@
               src="assets/img/logos/airbnb-logo.svg"
               alt="Logo Airbnb"
               class="brands__img-item"
-          /></a>
+          ></a>
           <a href="https://www.google.com" target="_blank"
             ><img
               loading="lazy"
               src="assets/img/logos/google-logo.svg"
               alt="Logo Google"
               class="brands__img-item"
-          /></a>
+          ></a>
           <a href="https://www.microsoft.com" target="_blank"
             ><img
               loading="lazy"
               src="assets/img/logos/microsoft-logo.svg"
               alt="Logo Microsoft"
               class="brands__img-item"
-          /></a>
+          ></a>
           <a href="https://www.fedex.com" target="_blank"
             ><img
               loading="lazy"
               src="assets/img/logos/fedex-logo.svg"
               alt="Logo Fedex"
               class="brands__img-item"
-          /></a>
+          ></a>
           <a href="https://www.amazon.com" target="_blank"
             ><img
               loading="lazy"
               src="assets/img/logos/amazon-logo.svg"
               alt="Logo Amazon"
               class="brands__img-item"
-          /></a>
+          ></a>
         </div>
       </section>
 
@@ -180,13 +178,13 @@
       <section id="reviews__wrapper">
         <h2>Hear What Our Clients Have to Say</h2>
         <p>
-          "Circle helped us through every stage of our statup.<br />
+          "Circle helped us through every stage of our statup.<br>
           We really enjoyed working with you"
         </p>
         <div class="reviews__autor-testimonial-block">
           <img
             src="assets/img/testimonial-section/profile.png"
-            alt="Kristin Watson picture" />
+            alt="Kristin Watson picture">
           <div>
             <h4>Kristin Watson</h4>
             <h5>Booking.com</h5>
@@ -195,19 +193,19 @@
         <img
           class="reviews__emoji-1"
           src="assets/img/testimonial-section/memoji-1.png"
-          alt="Face Emoji Icon" />
+          alt="Face Emoji Icon">
         <img
           class="reviews__emoji-2"
           src="assets/img/testimonial-section/memoji-2.png"
-          alt="Face Emoji Icon" />
+          alt="Face Emoji Icon">
         <img
           class="reviews__emoji-3"
           src="assets/img/testimonial-section/memoji-3.png"
-          alt="Face Emoji Icon" />
+          alt="Face Emoji Icon">
         <img
           class="reviews__emoji-4"
           src="assets/img/testimonial-section/memoji-4.png"
-          alt="Face Emoji Icon" />
+          alt="Face Emoji Icon">
       </section>
 
       <!-- Services Section-->
@@ -252,11 +250,12 @@
         <h2>Do you have any questions?</h2>
         <p>Let us help you!</p>
         <div class="questions__subscribe">
+          <label for="questions__email-input" class="visually-hidden">Your Email:</label>
           <!-- Icon attached as background in input field -->
           <input
             id="questions__email-input"
             type="text"
-            placeholder="Enter your email" />
+            placeholder="Enter your email">
           <a id="questions__btn" href="#">Subscribe</a>
         </div>
       </section>
@@ -267,10 +266,10 @@
       <!-- Logo -->
       <div class="footer__logo">
         <div class="footer__img-logo">
-          <img src="./assets/img/logos/circle.svg" alt="Circle Agency Logo" />
+          <img src="./assets/img/logos/circle.svg" alt="Circle Agency Logo">
         </div>
         <address class="footer__address">
-          <p>2972 Westheimer Rd. Santa Ana,<br />Illinois 85486</p>
+          <p>2972 Westheimer Rd. Santa Ana,<br>Illinois 85486</p>
         </address>
       </div>
       <!-- Footer Navigation -->

@@ -1,30 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <meta name="author" content="Circle Agency" />
-    <meta name="description" content="Fictional web design company" />
-    <meta name="keywords" content="web design, company, business, fictional" />
+    <meta name="author" content="Circle Agency">
+    <meta name="description" content="Fictional web design company">
+    <meta name="keywords" content="web design, company, business, fictional">
 
     <!-- Favicon + FontAwesome Icons -->
-    <link rel="icon" type="image/x-icon" href="assets/img/logos/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="assets/img/logos/favicon.ico">
     <script
       src="https://kit.fontawesome.com/66c113ad0a.js"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous" defer></script>
 
     <!--CSS-->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
 
     <!--Javscript-->
     <script src="./assets/js/projectDataHandler.js" defer></script>
-    <script src="./assets/js/navigation.js" defer></script>
-    <script src="./assets/js/loader-animation.js" defer></script>
-    <script src="./assets/js/scrollToTop.js" defer></script>
-    <script src="./assets/js/darkMode.js" defer></script>
+    <script src="./assets/js/siteInteractions.js" defer></script>
 
     <!-- Page Title -->
     <title>404 Error Page</title>
@@ -45,21 +42,21 @@
 
     <!-- Top Navigation -->
     <header>
-      <nav id="topnav__wrapper" role="navigation">
+      <nav id="topnav__wrapper">
         <!-- Logo -->
         <div class="topnav__logo">
           <a href="./index.html">
-            <img src="./assets/img/logos/circle.svg" alt="Circle Agency Logo" />
+            <img src="./assets/img/logos/circle.svg" alt="Circle Agency Logo">
           </a>
           <!-- Toggle Button -->
-          <button id="darkModeToggle">
+          <button id="darkModeToggle" aria-label="Toggle Dark Mode">
             <i class="fas fa-moon fa-lg moon"></i>
             <i class="fas fa-sun fa-lg sun"></i>
           </button>
         </div>
         <!-- Hamburger Menu Icon -->
         <div class="topnav__hamburger-menu">
-          <input id="topnav__hamburger-checkbox" type="checkbox" />
+          <input id="topnav__hamburger-checkbox" type="checkbox">
           <label
             class="topnav__hamburger-icon"
             for="topnav__hamburger-checkbox">
@@ -117,7 +114,7 @@
           <input
             id="questions__email-input"
             type="text"
-            placeholder="Enter your email" />
+            placeholder="Enter your email">
           <a id="questions__btn" href="#">Subscribe</a>
         </div>
       </section>
@@ -128,10 +125,10 @@
       <!-- Logo -->
       <div class="footer__logo">
         <div class="footer__img-logo">
-          <img src="./assets/img/logos/circle.svg" alt="Circle Agency Logo" />
+          <img src="./assets/img/logos/circle.svg" alt="Circle Agency Logo">
         </div>
         <address class="footer__address">
-          <p>2972 Westheimer Rd. Santa Ana,<br />Illinois 85486</p>
+          <p>2972 Westheimer Rd. Santa Ana,<br>Illinois 85486</p>
         </address>
       </div>
       <!-- Footer Navigation -->
