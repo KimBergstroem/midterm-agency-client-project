@@ -270,9 +270,10 @@ All testing was carried out in [Testing.md](TESTING.md).
 
 ### **Known Bugs**
 
-| Type      | Bug     | Solution |
-| --------- | ------- | -------- |
-| Script.js | Example | Example  |
+| Type          | Bug                                                         | Solution                                                 |
+| ------------- | ----------------------------------------------------------- | -------------------------------------------------------- |
+| index.html       | Brand logos animation not smoothly timing in marquee-container | On going issue  |
+
 
 &nbsp;
 
