@@ -12,46 +12,36 @@ The Circle Agency Project is an exciting endeavor aimed at developing a comprehe
 
 ## <span id="readme-top">**Table of Content**</span>
 
-- 📄[**User Experience**](#user-experience-ux)
+- 📄 [**User Experience (UX)**](#--user-experience--ux---)
+    + [**User Stories**](#user-stories)
+- 📄 [**Design**](#--design--)
+    + [**Colour Scheme**](#--colour-scheme--)
+    + [**Typography**](#--typography--)
+    + [**Imagery**](#--imagery--)
+    + [**Wireframes**](#--wireframes--)
+- 📄 [**Features**](#--features--)
+    + [**Future-implementations**](#--future-implementations--)
+    + [**Accessibility**](#--accessibility--)
+- 📄 [**Technologies Used**](#--technologies-used--)
+    + [**Languages Used**](#--languages-used--)
+    + [**Frameworks, Libraries & Programs Used**](#--frameworks--libraries---programs-used--)
+- 📄 [**Deployment & Local Development**](#--deployment---local-development--)
+    + [**Deploying on Netlify**](#--deploying-on-netlify--)
+    + [**Local Development**](#--local-development--)
+- 📄 [**Testing**](#--testing--)
+    + [**Solved Bugs**](#--solved-bugs--)
+    + [**Known Bugs**](#--known-bugs--)
+- 📄 [**Credits**](#--credits--)
+    + [**Code Used**](#--code-used--)
+    + [**Content**](#--content--)
+    + [**Learning Resources**](#--learning-resources--)
+    + [**Acknowledgments**](#--acknowledgments--)
+    + [**License**](#--license--)
 
-  - [User Stories](#user-stories)
+&nbsp;
 
-- 📄 [**Design**](#design)
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
-  - [Colour Scheme](#colour-scheme)
-  - [Typography](#typography)
-  - [Imagery](#imagery)
-  - [Wireframes](#wireframes)
-
-- 📄 [**Features**](#features)
-
-  - [General Features on Each Page](#general-features-on-each-page)
-  - [Future Implementations](#future-implementations)
-  - [Accessibility](#accessibility)
-
-- 📄 [**Technologies Used**](#technologies-used)
-
-  - [Languages Used](#languages-used)
-  - [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
-
-- 📄 [**Deployment & Local Development**](#deployment--local-development)
-
-  - [Deployment](#deployment)
-  - [Local Development](#local-development)
-    - [How to Fork](#how-to-fork)
-    - [How to Clone](#how-to-clone)
-
-- 📄 [**Testing**](#testing)
-
-  - [Solved Bugs](#Bugs)
-  - [Known Bugs](#Bugs)
-
-- 📄 [**Credits**](#credits)
-  - [Code Used](#code-used)
-  - [Content](#content)
-  - [Media](#media)
-  - [Acknowledgments](#acknowledgments)
-  - [License](#license)
 
 <p align="center">
   <img src="docs/readme.md/readme-divider.png" />

@@ -10,14 +10,20 @@ Developer: [Kim Bergström](https://github.com/KimBergstroem) <br>
 
 ## Table of Content
 
-- 📄 [**Automated Testing**](#automated-testing)
-  - [W3C Validator](#w3c-validator)
-  - [JavaScript Validator](#javaScript-validator)
-  - [Lighthouse](#lighthouse)
-  - [Wave Accessibility Test](#wave)
-- 📄 [**Manual Testing**](#manual-testing)
-  - [Testing User Stories](#testing-user-stories)
-  - [Full Testing](#full-testing)
+- 📄 [**Automated Testing**](#--automated-testing--)
+    + [**W3C Validator - HTML**](#--w3c-validator---html--)
+    + [**W3C Validator - CSS**](#--w3c-validator---css--)
+    + [**JavaScript Validator**](#--javascript-validator--)
+    + [**Lighthouse**](#--lighthouse--)
+    + [**Wave**](#--wave--)
+- 📄 [**Manual Testing**](#--manual-testing--)
+    + [**Testing User Stories**](#--testing-user-stories--)
+    + [**Full Testing**](#--full-testing--)
+
+&nbsp;
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 
 ---
 
@@ -78,15 +84,19 @@ After validating these files, I decided to consolidate them into a single file n
 Lighthouse is a tool from Google that helps you test and improve your website's performance, accessibility, SEO, and best practices. It provides insights and recommendations to enhance the user experience and ensure your site meets industry standards.
 
 - [index.html lighthouse desktop](#https)
+
   ![index.html file](./docs/testing.md/accessibility/testing-performance-index.png)
 
 - [project.html lighthouse desktop](#https)
+
   ![project.html file](./docs/testing.md/accessibility/testing-performance-project.png)
 
 - [contact.html lighthouse desktop](#https)
+
   ![contact.html file](./docs/testing.md/accessibility/testing-performance-contact.png)
 
 - [404.html lighthouse desktop](#https)
+
   ![404.html file](./docs/testing.md/accessibility/testing-performance-404.png)
 
 
