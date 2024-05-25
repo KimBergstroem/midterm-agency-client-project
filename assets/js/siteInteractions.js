@@ -1,8 +1,10 @@
-// #Dark mode, #Top Navigation Bar, #Page Scroll to Top, #Page loader animation
+// #Dark mode, #Top Navigation Bar, #Page Scroll to Top, 
+// #Page loader animation, #Question Subscribe
 
 //--------------------
 //--------------------
 //--------------------
+
 // Dark mode
 document.addEventListener("DOMContentLoaded", function () {
     const toggleButton = document.getElementById("darkModeToggle");
@@ -29,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //--------------------
 //--------------------
 //--------------------
+
 // Top Navigation Bar
 // Constants
 const hamburgerCheckbox = document.getElementById("topnav__hamburger-checkbox"),
@@ -52,6 +55,7 @@ if (window.innerWidth > 766) {
 //--------------------
 //--------------------
 //--------------------
+
 // Page Scroll to Top
 function scrollToTop() {
     document.documentElement.scrollTop = 0;
@@ -63,6 +67,7 @@ function scrollToTop() {
 //--------------------
 //--------------------
 //--------------------
+
 // Page loader animation
 const removeSplashAnimation = () => {
   const splash = document.querySelector(".splash");
@@ -72,3 +77,18 @@ const removeSplashAnimation = () => {
 };
 
 document.addEventListener("DOMContentLoaded", removeSplashAnimation);
+
+//--------------------
+//--------------------
+//--------------------
+
+// Question Subscribe
+const SUB_BTN = document.querySelector("#questions__btn");
+
+SUB_BTN.addEventListener("click", (event) => {
+  const EMAIL_INPUT = document.querySelector("#questions__email-input");
+  if (EMAIL_INPUT.value.trim() !== "") {
+    alert("Thank you for your interest.");
+  }
+  EMAIL_INPUT.value = "";
+});
